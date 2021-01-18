@@ -1,5 +1,5 @@
 ---
-  - hosts:  hostservers
+  - hosts: test
     gather_facts: true
     become: yes
     become_method: sudo
