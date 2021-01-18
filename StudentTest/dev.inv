@@ -1,3 +1,2 @@
-[ hostservers]
-
+[ hostserver]
 192.168.29.217 ansible_ssh_user=pratik1 ansible_sudo_pass=pratik1
