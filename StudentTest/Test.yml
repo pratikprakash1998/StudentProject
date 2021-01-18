@@ -29,6 +29,12 @@
           remote_src: yes
       - name: Starting tomcat
         shell: nohup /usr/local/tomcat/bin/startup.sh &
+      - name: Copy the war file
+        copy:
+            src: /var/lib/jenkins/workspace/StudentProject/StudentTest/target/StudentTest-0.0.1-SNAPSHOT.war
+            dest: /usr/local/apache-tomcat-8.5.61/webapps/
+      
+        
      
       
   
